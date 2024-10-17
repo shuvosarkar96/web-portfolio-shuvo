@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/layout.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --black: #1C1D20;
+  --black-dark: #141517;
+  --gray: #999D9E;
+  --gray-light: #E9EAEB;
+  --blue: #455CE9;
+  --blue-dark: #334BD3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --black: #1C1D20;
+    --black-dark: #141517;
+    --gray: #999D9E;
+    --gray-light: #E9EAEB;
+    --blue: #455CE9;
+    --blue-dark: #334BD3;
+    --text-dark: #1C1D20;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Roboto', Helvetica, sans-serif;
+  margin: 0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* --single classes start-- */
+.contact-slogan {
+  @apply text-white text-[7rem] leading-none;
+}
+
+/* .tem-bg {
+  @apply h-screen text-white;
+  background: var(--black)
+} */
+
+/* --single classes end-- */
+
+/* ---homepage start--- */
+.home {
+  .hero {
+    @apply h-screen pb-14 flex flex-col justify-between;
+    background: var(--gray);
+    .upper-container {
+      @apply flex flex-row pt-[27rem] justify-between items-end pr-[8rem];
+      .left-item-container {
+        @apply h-[12vh] w-[16vw] rounded-r-full px-[1.5rem] pl-[3rem] flex justify-between items-center;
+        background: var(--black);
+        .location-text {
+          @apply text-white text-[1.3rem] font-medium leading-6 flex flex-col;
+        }
+        .location-icon {
+          @apply p-2 rounded-full;
+          background: var(--gray);
+        }
+      }
+      .right-item-container {
+        @apply flex flex-col gap-[6rem];
+        .designation-icon {
+          @apply mt-[-12rem];
+        }
+        .designation {
+          @apply text-white text-[3rem] flex flex-col leading-[4rem];
+        }
+      }
+    }
+    .lower-container {
+      h1 {
+        @apply text-white text-[16rem] leading-none;
+      }
+    }
+  }
+  .about-me {
+    @apply px-72 pt-40 h-[60vh] flex flex-row justify-between;
+    .main-text {
+      @apply w-[45vw] text-[2.6rem] leading-[3.6rem];
+      color: var(--text-dark);
+    }
+    .text-icon {
+      @apply flex flex-col justify-between;
+      > p {
+        @apply w-72 text-xl leading-8;
+      }
+      .about-button {
+        @apply w-52 h-52 rounded-full flex justify-center items-center;
+        background: var(--black);
+        a {
+          @apply text-white text-xl;
+        }
+      }
+    }
+  }
+  .work {
+    @apply px-72 pt-40 flex flex-col;
+    h3 {
+      @apply text-sm uppercase text-gray-400 mb-10;
+    }
+    hr {
+      @apply mx-[-8rem];
+    }
+    .work-tile {
+      @apply flex flex-row justify-between items-center py-16;
+      color: var(--text-dark);
+      .big-text {
+        @apply text-8xl;
+      }
+      .small-text {
+        @apply text-xl;
+      }
+    }
+    .button-container {
+      @apply flex justify-center my-24;
+      > button {
+        @apply w-52 h-[5.5rem] rounded-full border text-xl font-medium;
+      }
+    }
+  }
+  .work-gallery {
+    @apply mt-16 mb-40 overflow-hidden;
+    .row-container {
+      @apply flex flex-row;
+      .horizontal-item-container {
+        @apply w-[34rem] h-[26rem] p-4 flex-shrink-0;
+        .single-item {
+          @apply w-full h-full;
+          &.no1 {
+            @apply bg-[#F5EFFF];
+          }
+          &.no2 {
+            @apply bg-[#e7e8ea];
+          }
+          &.no3 {
+            @apply bg-[#21252a];
+          }
+          &.no4 {
+            @apply bg-[#d7e4eb];
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    @apply px-72 pt-52 h-screen flex flex-col;
+    background: var(--black);
+    .contact-text-icon-container {
+      @apply flex flex-col gap-3;
+      .text-icon {
+        @apply flex flex-row items-center gap-10;
+        .contact-profile-image {
+          @apply rounded-full w-24 h-24;
+        }
+      }
+    }
+    .contact-line-button-container {
+      @apply flex items-center relative mt-28;
+      hr {
+        @apply border-0 border-gray-700 border-b w-full;
+      }
+      button {
+        @apply w-56 h-56 text-white text-xl shrink-0 rounded-full flex justify-center items-center absolute left-3/4;
+        background: var(--blue);
+      }
+      .arrow-left {
+        @apply absolute right-0 bottom-48;
+      }
+    }
+    .contact-info-container {
+      @apply flex flex-row gap-4;
+      .contact-button-wide {
+        @apply border border-neutral-700 px-12 py-7 rounded-full mt-24;
+        a {
+          @apply text-white text-xl font-medium;
+        }
+      }
+    }
+  }
+}
+
+/* ---homepage end--- */
