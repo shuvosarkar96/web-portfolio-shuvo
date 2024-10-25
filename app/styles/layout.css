@@ -14,11 +14,21 @@
   }
 
   >.footer {
-    @apply w-full absolute bottom-0 left-0 right-0 text-white;
+    @apply w-full px-12 py-9 absolute bottom-0 left-0 right-0 text-white flex flex-row items-center justify-between;
     .version-time-container {
-      .version-container {}
-      .time-container {}
+      @apply flex flex-row gap-12;
+      .version-container {
+        @apply flex flex-col gap-3;
+        .version {
+          @apply flex flex-row items-center gap-1;
+        }
+      }
+      .time-container {
+        @apply flex flex-col gap-3;
+      }
     }
-    .social-network-container {}
+    .social-network-container {
+      @apply flex flex-col gap-3;
+    }
   }
 }

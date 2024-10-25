@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Footer() {
   return (
     <section className="footer">
+
       <div className="version-time-container">
         <div className="version-container">
           <div className="title">Version</div>
@@ -20,6 +21,7 @@ export default function Footer() {
           <div className="time">10:00 AM GMT+6</div>
         </div>
       </div>
+
       <div className="social-network-container">
         <div className="title">Socials</div>
         <div className="social-networks">
@@ -29,6 +31,7 @@ export default function Footer() {
           <span>Facebook</span>
         </div>
       </div>
+
     </section>
   );
 }
