@@ -5,24 +5,18 @@ export default function Footer() {
   return (
     <section className="footer">
 
-      <div className="version-time-container">
-        <div className="version-container">
-          <div className="title">Version</div>
-          <div className="version">
-            <span>2024</span>
-            <span>
-              <FontAwesomeIcon width={14} icon={faCopyright} />
-            </span>
-            <span>Edition</span>
-          </div>
+      <div className="version-time">
+        <div className="version footer-container">
+          <h5 className="title">Version</h5>
+          <p className="version subtitle">2024 © Edition</p>
         </div>
-        <div className="time-container">
-          <div className="title">Local Time</div>
-          <div className="time">10:00 AM GMT+6</div>
+        <div className="time footer-container">
+          <h5 className="title">Local Time</h5>
+          <p className="time subtitle">10:00 AM GMT+6</p>
         </div>
       </div>
 
-      <div className="social-network-container">
+      <div className="social-network">
         <div className="title">Socials</div>
         <div className="social-networks">
           <span>LinkedIn</span>
