@@ -6,23 +6,23 @@ export default function Footer() {
     <section className="footer">
 
       <div className="version-time">
-        <div className="version footer-container">
-          <h5 className="title">Version</h5>
-          <p className="version subtitle">2024 © Edition</p>
+        <div className="">
+          <h5 className="heading">Version</h5>
+          <p className="">2024 © Edition</p>
         </div>
-        <div className="time footer-container">
-          <h5 className="title">Local Time</h5>
-          <p className="time subtitle">10:00 AM GMT+6</p>
+        <div className="">
+          <h5 className="heading">Local Time</h5>
+          <p className="">10:00 AM GMT+6</p>
         </div>
       </div>
 
-      <div className="social-network">
-        <div className="title">Socials</div>
-        <div className="social-networks">
-          <span>LinkedIn</span>
-          <span>GitHub</span>
-          <span>Instagram</span>
-          <span>Facebook</span>
+      <div className="">
+        <div className="heading">Socials</div>
+        <div className="">
+          <a>LinkedIn</a>
+          <a>GitHub</a>
+          <a>Instagram</a>
+          <a>Facebook</a>
         </div>
       </div>
 

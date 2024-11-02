@@ -15,23 +15,5 @@
 
   >.footer {
     @apply w-full px-12 py-9 absolute bottom-0 left-0 right-0 text-white flex flex-row items-center justify-between;
-    .version-time {
-      @apply flex flex-row gap-12;
-      .version-container {
-        @apply flex flex-col gap-3;
-        .title {
-          @apply text-sm uppercase text-gray-500 font-semibold;
-        }
-        .version {
-          @apply flex flex-row items-center gap-1;
-        }
-      }
-      .time-container {
-        @apply flex flex-col gap-3;
-      }
-    }
-    .social-network {
-      @apply flex flex-col gap-3;
-    }
   }
 }
