@@ -47,6 +47,20 @@ body {
   @apply text-white text-[7rem] leading-none;
 }
 
+.big-round-button {
+  @apply w-56 h-56 text-white text-xl shrink-0 rounded-full flex justify-center items-center;
+  background: var(--black-dark);
+}
+
+
+      .about-button {
+        @apply w-52 h-52 rounded-full flex justify-center items-center;
+        background: var(--black);
+        a {
+          @apply text-white text-xl;
+        }
+      }
+
 /* .tem-bg {
   @apply h-screen text-white;
   background: var(--black)
@@ -98,13 +112,6 @@ body {
       @apply flex flex-col justify-between;
       > p {
         @apply w-72 text-xl leading-8;
-      }
-      .about-button {
-        @apply w-52 h-52 rounded-full flex justify-center items-center;
-        background: var(--black);
-        a {
-          @apply text-white text-xl;
-        }
       }
     }
   }

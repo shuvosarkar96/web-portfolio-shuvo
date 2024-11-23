@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         <div className="text-icon">
           <p className='sub-text'>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</p>
-          <div className='about-button'>
+          <div className='big-round-button about'>
             <a href="">About me</a>
           </div>
         </div>
